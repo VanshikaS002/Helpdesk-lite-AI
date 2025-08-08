@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #a2d2ff, #cdb4db); /* soft gradient */
+  color: #fff;
+}
+
+.dashboard-container {
+  padding: 40px;
+  background: linear-gradient(to bottom right, #a2d2ff, #cdb4db);
+  min-height: 100vh;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffffcc; /* semi-transparent white */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.user-table th,
+.user-table td {
+  padding: 14px;
+  text-align: center;
+  color: #222;
+}
+
+.user-table th {
+  background-color: #91cfff;
+  color: #000;
+}
+
+.user-table tr:nth-child(even) {
+  background-color: #f0f8ff;
+}
+
+.user-table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.user-table tr:hover {
+  background-color: #e8f0fe;
+}
+
+.user-table button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Purple button - Make Agent/User */
+.user-table button.make-agent {
+  background: linear-gradient(135deg, #c471ed, #12c2e9);
+  color: white;
+}
+
+.user-table button.make-agent:hover {
+  opacity: 0.85;
+}
+
+/* Red button - Delete */
+.user-table button.delete-user {
+  background-color: #e74c3c;
+  color: white;
+  margin-left: 8px;
+}
+
+.user-table button.delete-user:hover {
+  background-color: #c0392b;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 30, 30, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-box {
+  background: #bd76e6;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+src/styles/App.css
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #a2d2ff, #cdb4db);
+  color: #333;
+}
+
+.App {
+  text-align: center;
+}
+
+button {
+  background-color: #7b2cbf;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #5a189a;
+}
+
+input,
+textarea {
+  font-family: inherit;
+}
+
+a {
+  color: #7b2cbf;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
